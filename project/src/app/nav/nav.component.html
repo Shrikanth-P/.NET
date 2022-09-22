@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-family:optima ;"><img src="https://i.pinimg.com/originals/3c/7a/f3/3c7af3c03a1fc34f679d6cb8d1af703a.png" width="70px" height="50px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kids books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Story books</a>
+        </li>
+      <li class="nav-item">
+        <div class="d-flex">
+         <input class="form-control me-2" type="text" [(ngModel)]="value" placeholder="search"/>
+         <button class="btn btn-outline-success" [disabled]="isdisabled" (click)="onClick()">Search</button>
+        </div>
+        <div style="color:aliceblue">{{value}}</div>
+      </li>  
+        
+      </ul>
+    </div>
+  </div>
+</nav> 
+<br><br><br><br>

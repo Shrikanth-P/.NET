@@ -1,0 +1,11 @@
+<h2>Programming Books List!</h2>
+    <button (click)="isShowing =! isShowing">
+        <ng-container *ngIf="isShowing">Hide books</ng-container>
+        <ng-container *ngIf="!isShowing">show books</ng-container>
+        </button>
+<ng-container *ngIf="isShowing">
+    <li *ngFor="let book of books">
+        <img [src] = book.img [alt]='book.name'/>
+        <p>{{book.name}} by {{book.author}}</p>
+    </li>
+</ng-container>
